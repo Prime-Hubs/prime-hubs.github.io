@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Anime Hub</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #0a0a0f, #111122);
+  color: white;
+}
+
+/* NAVBAR */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 10%;
+  backdrop-filter: blur(10px);
+  background: rgba(255,255,255,0.05);
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  background: linear-gradient(90deg,#8a2be2,#00d4ff);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+/* SEARCH */
+.search-box {
+  text-align: center;
+  margin: 30px 0;
+}
+
+.search-box input {
+  width: 60%;
+  padding: 12px;
+  border-radius: 25px;
+  border: none;
+  outline: none;
+  background: rgba(255,255,255,0.1);
+  color: white;
+}
+
+/* CATEGORY */
+.categories {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.cat {
+  padding: 8px 20px;
+  border-radius: 20px;
+  background: rgba(255,255,255,0.1);
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.cat:hover {
+  background: linear-gradient(90deg,#8a2be2,#00d4ff);
+}
+
+/* GRID */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+  gap: 25px;
+  padding: 0 10%;
+}
+
+/* CARD */
+.card {
+  border-radius: 15px;
+  overflow: hidden;
+  position: relative;
+  transition: 0.3s;
+  backdrop-filter: blur(10px);
+  background: rgba(255,255,255,0.05);
+}
+
+.card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.card-info {
+  padding: 15px;
+}
+
+.card h3 {
+  font-size: 1rem;
+}
+
+.card p {
+  font-size: 0.8rem;
+  opacity: 0.7;
+}
+
+/* HOVER */
+.card:hover {
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0 0 20px rgba(0,212,255,0.4);
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 30px;
+  margin-top: 50px;
+  background: rgba(255,255,255,0.05);
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAV -->
+<div class="navbar">
+  <div class="logo">Anime Hub</div>
+  <div><i class="fa-solid fa-user"></i></div>
+</div>
+
+<!-- SEARCH -->
+<div class="search-box">
+  <input type="text" placeholder="Search anime...">
+</div>
+
+<!-- CATEGORY -->
+<div class="categories">
+  <div class="cat">Trending</div>
+  <div class="cat">Popular</div>
+  <div class="cat">Latest</div>
+</div>
+
+<!-- GRID -->
+<div class="grid">
+
+  <!-- CARD -->
+  <div class="card">
+    <img src="https://images.unsplash.com/photo-1614583225154-5fcdda07019e">
+    <div class="card-info">
+      <h3>Attack on Titan</h3>
+      <p>Action • Dark Fantasy</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="https://images.unsplash.com/photo-1611605698335-8b1569810432">
+    <div class="card-info">
+      <h3>Demon Slayer</h3>
+      <p>Adventure • Action</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="https://images.unsplash.com/photo-1608889175123-8ee362201f81">
+    <div class="card-info">
+      <h3>Jujutsu Kaisen</h3>
+      <p>Supernatural • Action</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="https://images.unsplash.com/photo-1583337130417-3346a1be7dee">
+    <div class="card-info">
+      <h3>One Piece</h3>
+      <p>Adventure • Fantasy</p>
+    </div>
+  </div>
+
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <p>© 2026 Anime Hub</p>
+</footer>
+
+</body>
+</html>
