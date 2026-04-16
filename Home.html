@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Anime World</title>
+
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+<!-- Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #0a0a0f, #111122);
+  color: white;
+  overflow-x: hidden;
+}
+
+/* HERO SECTION */
+.hero {
+  height: 100vh;
+  background: url('https://images.unsplash.com/photo-1608889175123-8ee362201f81?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.6);
+}
+
+.hero-content {
+  position: relative;
+  text-align: center;
+  backdrop-filter: blur(15px);
+  background: rgba(255,255,255,0.05);
+  padding: 40px;
+  border-radius: 20px;
+  border: 1px solid rgba(255,255,255,0.1);
+  box-shadow: 0 0 40px rgba(0,0,0,0.5);
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+  background: linear-gradient(90deg, #8a2be2, #00d4ff);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  opacity: 0.8;
+  margin-bottom: 25px;
+}
+
+/* BUTTONS */
+.buttons {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+}
+
+.btn {
+  padding: 12px 25px;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+  transition: 0.3s;
+  text-decoration: none;
+  color: white;
+}
+
+.btn-primary {
+  background: linear-gradient(90deg, #8a2be2, #00d4ff);
+}
+
+.btn-secondary {
+  background: rgba(255,255,255,0.1);
+  border: 1px solid rgba(255,255,255,0.2);
+}
+
+.btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(138,43,226,0.6);
+}
+
+/* DESCRIPTION */
+.section {
+  padding: 80px 10%;
+  text-align: center;
+}
+
+.section h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.section p {
+  max-width: 800px;
+  margin: auto;
+  opacity: 0.8;
+  line-height: 1.6;
+}
+
+/* BANNERS */
+.banner-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin-top: 40px;
+}
+
+.card {
+  position: relative;
+  border-radius: 15px;
+  overflow: hidden;
+  transition: 0.3s;
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(0,212,255,0.4);
+}
+
+/* FOOTER */
+footer {
+  padding: 30px;
+  text-align: center;
+  background: rgba(255,255,255,0.05);
+  margin-top: 50px;
+}
+
+footer a {
+  color: #00d4ff;
+  text-decoration: none;
+}
+</style>
+</head>
+
+<body>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="overlay"></div>
+  <div class="hero-content">
+    <h1>Enter Anime World</h1>
+    <p>Stream. Explore. Experience the best anime in one place.</p>
+
+    <div class="buttons">
+      <a href="main.html" class="btn btn-primary">
+        <i class="fa-solid fa-play"></i> Enter Site
+      </a>
+      <a href="https://t.me/yourchannel" class="btn btn-secondary">
+        <i class="fa-brands fa-telegram"></i> Join Telegram
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- DESCRIPTION -->
+<section class="section">
+  <h2>About This Platform</h2>
+  <p>
+    Welcome to the ultimate anime experience. Discover trending series,
+    explore legendary titles, and stay updated with the latest releases.
+    Designed with modern aesthetics, smooth performance, and a passion
+    for anime lovers.
+  </p>
+
+  <div class="banner-grid">
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1612036782180-6f0822045d3c?auto=format&fit=crop&w=800&q=80">
+    </div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1583337130417-3346a1be7dee?auto=format&fit=crop&w=800&q=80">
+    </div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1614854262318-831574f15f1f?auto=format&fit=crop&w=800&q=80">
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p>© 2026 Anime World | Built for Otakus</p>
+  <p><a href="https://t.me/yourchannel">Join Telegram</a></p>
+</footer>
+
+</body>
+  </html>
